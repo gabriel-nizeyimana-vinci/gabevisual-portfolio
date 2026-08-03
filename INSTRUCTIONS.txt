@@ -1,0 +1,5 @@
+1. Ouvre la racine du dépôt gabevisual-portfolio.
+2. Clique Add file > Upload files.
+3. Glisse index.html et script.js de ce dossier.
+4. Confirme le remplacement, puis Commit changes directement sur main.
+5. Active ensuite Settings > Pages > Deploy from a branch > main > /(root) > Save.
