@@ -314,3 +314,389 @@
     font-size:.58rem;
   }
 }
+
+/* V14 — correctif téléphone uniquement. Aucun effet au-dessus de 760 px. */
+@media (max-width:760px){
+  html,
+  body{
+    width:100%;
+    max-width:100%;
+    min-width:0;
+    overflow-x:hidden!important;
+  }
+
+  body{
+    position:relative;
+  }
+
+  main,
+  header,
+  footer,
+  section,
+  div,
+  article,
+  nav{
+    min-width:0;
+  }
+
+  img,
+  video,
+  iframe{
+    max-width:100%;
+  }
+
+  .site-header,
+  main>section,
+  footer{
+    width:calc(100% - 28px);
+    max-width:calc(100% - 28px);
+    margin-inline:auto;
+  }
+
+  .site-header{
+    height:72px;
+    gap:10px;
+  }
+
+  .site-header nav{
+    display:none!important;
+  }
+
+  .logo{
+    flex:0 1 auto;
+    font-size:.96rem;
+    white-space:nowrap;
+  }
+
+  .header-contact{
+    flex:0 0 auto;
+    padding:8px 11px;
+    font-size:.69rem;
+    white-space:nowrap;
+  }
+
+  .hero{
+    min-height:0;
+    grid-template-columns:minmax(0,1fr)!important;
+    gap:42px;
+    padding:58px 0 76px;
+  }
+
+  .hero-copy,
+  .hero-copy>*{
+    max-width:100%;
+  }
+
+  .hero-copy h1{
+    width:100%;
+    max-width:100%;
+    font-size:clamp(2.9rem,13.25vw,4.25rem)!important;
+    line-height:.86;
+    letter-spacing:-.085em;
+    white-space:nowrap;
+  }
+
+  .hero-copy h2{
+    max-width:100%;
+    margin:28px 0 20px;
+    font-size:clamp(2rem,9.9vw,3rem)!important;
+    line-height:1;
+    letter-spacing:-.065em;
+  }
+
+  .hero-text{
+    max-width:100%;
+    font-size:.98rem;
+    line-height:1.65;
+  }
+
+  .hero-actions{
+    width:100%;
+    flex-direction:column;
+    gap:10px;
+    margin-top:28px;
+  }
+
+  .hero-actions .button{
+    width:100%;
+    min-height:50px;
+  }
+
+  .showreel-shell{
+    width:100%;
+    max-width:390px;
+    height:auto;
+    aspect-ratio:4/5.6;
+    justify-self:center;
+    margin-inline:auto;
+  }
+
+  .showreel-screen{
+    width:78%;
+    height:88%;
+    max-width:100%;
+  }
+
+  .showreel-shell::before{
+    left:-9%;
+    bottom:11%;
+    font-size:4.8rem;
+  }
+
+  .showreel-label{
+    top:13px;
+    left:12px;
+    right:12px;
+  }
+
+  .showreel-caption{
+    left:20px;
+    right:20px;
+    bottom:21px;
+    gap:10px;
+  }
+
+  .showreel-caption span{
+    font-size:1.65rem;
+  }
+
+  .showreel-caption b{
+    max-width:105px;
+    font-size:.55rem;
+  }
+
+  .marquee{
+    width:100%!important;
+    max-width:100%!important;
+    margin-inline:0!important;
+  }
+
+  .marquee-group{
+    gap:18px;
+    padding:19px 10px;
+  }
+
+  .marquee-group span{
+    font-size:2.15rem;
+  }
+
+  .work,
+  .services,
+  .about{
+    padding:82px 0;
+  }
+
+  .work-heading{
+    grid-template-columns:minmax(0,1fr)!important;
+    gap:24px;
+    margin-bottom:34px;
+  }
+
+  .work-heading h2,
+  .section-heading h2,
+  .about h2,
+  .contact h2{
+    max-width:100%;
+    font-size:clamp(2.65rem,12vw,3.7rem)!important;
+    line-height:.96;
+    letter-spacing:-.07em;
+    overflow-wrap:anywhere;
+  }
+
+  .work-heading>p,
+  .service p,
+  .about-copy p,
+  .contact>p:not(.kicker){
+    max-width:100%;
+    font-size:.96rem;
+  }
+
+  .work-marquee{
+    width:100vw;
+    max-width:100vw;
+    margin-left:calc(50% - 50vw);
+    overflow:hidden;
+  }
+
+  .project-carousel{
+    width:100vw;
+    max-width:100vw;
+    margin-left:calc(50% - 50vw);
+    overflow:hidden!important;
+    padding:8px 0 23px;
+  }
+
+  .project-group{
+    gap:12px;
+    padding-right:12px;
+  }
+
+  .project-card.is-wide{
+    width:min(86vw,420px)!important;
+  }
+
+  .project-card.is-tall{
+    width:min(72vw,330px)!important;
+  }
+
+  .project-card:hover .project-media{
+    transform:none;
+  }
+
+  .project-top{
+    left:14px;
+    right:14px;
+    top:14px;
+  }
+
+  .project-bottom{
+    left:15px;
+    right:15px;
+    bottom:15px;
+    gap:12px;
+  }
+
+  .project-bottom h3{
+    font-size:clamp(1.55rem,7.5vw,2.1rem)!important;
+  }
+
+  .project-bottom p{
+    font-size:.59rem;
+  }
+
+  .project-play{
+    width:45px;
+    height:45px;
+    flex-basis:45px;
+  }
+
+  .carousel-hint{
+    width:calc(100% - 28px);
+    max-width:calc(100% - 28px);
+    font-size:.57rem;
+    line-height:1.55;
+  }
+
+  .service{
+    grid-template-columns:42px minmax(0,1fr);
+    gap:12px;
+    padding:27px 0;
+  }
+
+  .service h3{
+    font-size:1.65rem;
+  }
+
+  .about{
+    grid-template-columns:minmax(0,1fr)!important;
+    gap:28px;
+  }
+
+  .about-copy{
+    padding-top:0;
+  }
+
+  .about-tags{
+    gap:7px;
+  }
+
+  .about-tags span{
+    padding:8px 10px;
+    font-size:.66rem;
+  }
+
+  .contact{
+    min-height:0;
+    padding-top:82px;
+    padding-bottom:82px;
+  }
+
+  .contact-actions{
+    grid-template-columns:minmax(0,1fr)!important;
+    gap:12px;
+    margin-top:32px;
+  }
+
+  .contact-card{
+    width:100%;
+    min-width:0;
+    min-height:140px;
+    padding:20px;
+  }
+
+  .contact-card strong{
+    max-width:100%;
+    font-size:.95rem;
+    overflow-wrap:anywhere;
+    word-break:break-word;
+  }
+
+  footer{
+    height:auto;
+    min-height:150px;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:center;
+    gap:10px;
+    padding:28px 0;
+  }
+
+  footer p{
+    margin:0;
+  }
+
+  .modal{
+    padding:0;
+    align-items:flex-end;
+  }
+
+  .modal-panel{
+    width:100%;
+    max-width:100%;
+    max-height:94svh;
+    border-radius:18px 18px 0 0;
+    border-left:0;
+    border-right:0;
+    border-bottom:0;
+  }
+
+  .modal-video,
+  .media-stage{
+    width:100%;
+    min-height:52svh!important;
+    max-height:62svh;
+  }
+
+  .modal-video video,
+  .direct-video-stage video{
+    width:100%;
+    height:100%;
+    max-height:62svh;
+    object-fit:contain;
+  }
+
+  .modal-info{
+    grid-template-columns:minmax(0,1fr)!important;
+    gap:8px;
+    padding:22px 18px 28px;
+  }
+
+  .modal-info h3{
+    font-size:2rem;
+  }
+
+  .modal-info>p{
+    margin-top:10px;
+  }
+}
+
+@media (max-width:380px){
+  .hero-copy h1{
+    font-size:12.7vw!important;
+  }
+
+  .header-contact{
+    padding-inline:9px;
+    font-size:.65rem;
+  }
+}
