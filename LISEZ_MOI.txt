@@ -1,0 +1,16 @@
+GABEVISUAL — ENVOI MANUEL SUR GITHUB
+
+1. Ouvrez le dépôt gabevisual-portfolio sur GitHub.
+2. Cliquez sur Add file > Upload files.
+3. Décompressez le ZIP fourni.
+4. Ouvrez le dossier GabeVisual_Upload_Manuel_GitHub.
+5. Sélectionnez tout son contenu : index.html, styles.css, script.js, .nojekyll, le dossier assets et LISEZ_MOI.txt.
+6. Faites glisser ce contenu dans la zone d’envoi GitHub.
+7. En bas, écrivez : Publication du portfolio GabeVisual.
+8. Cliquez sur Commit changes.
+9. Ouvrez Settings > Pages.
+10. Source : Deploy from a branch.
+11. Branch : main ; dossier : / (root), puis Save.
+
+Adresse attendue :
+https://gabriel-nizeyimana-vinci.github.io/gabevisual-portfolio/
